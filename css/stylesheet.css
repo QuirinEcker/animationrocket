@@ -1,0 +1,32 @@
+#wrapper {
+	overflow-y: hidden;
+	background-image: url(../img/cosmos.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	min-height: 100%;
+}
+
+#rocket {
+	position: absolute;
+	bottom: 0px; left: 50%;
+	background-image: url(../img/rocket.png);
+	background-repeat: no-repeat;
+	height: 200px; width: 200px;
+	display: block;
+}
+
+.fly {
+	animation-name: flyAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes flyAnimation {
+	0% {position: absolute; bottom: 0;}
+	50% {position: absolute; bottom: 150%;}
+	51% {transform: rotate(0deg)}52% {transform: rotate(180deg)}
+	90% {position: absolute; bottom: 0; transform: rotate(180deg)}
+	100% {transform: rotate(0deg)}
+}
+
